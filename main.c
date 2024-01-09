@@ -10,7 +10,7 @@
 
 #define MIN(a, b) (a<b? (a) : (b))
 
-#define FAV_COLOR ((Color){0x18, 0x18, 0x18, 0xFF}) // sorry, but AA is a bit impractical
+#define FAV_COLOR ((Color){0x18, 0x18, 0x18, 0xAA}) // sorry, but FF is a bit impractical
 
 bool save_texture_as_image(Texture2D tex, const char *path){
     Image result = LoadImageFromTexture(tex);
